@@ -47,4 +47,4 @@ subprocess.run(command, shell=True)
 
 print("enjoy your airtag :)")
 
-os.remove(filename)
+os.remove(f"{filename}")
