@@ -1,5 +1,5 @@
 # ESP32-Airtag
-Clone an airtag onto an esp32
+Clone an existing airtag onto an ESP32
 
 Based on openhaystack
 
