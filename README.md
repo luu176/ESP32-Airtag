@@ -12,6 +12,7 @@
 ### How to use it
 <details>
 <summary><b>Step 1. Gathering Airtag data</b></summary>
+
 #### 1. To do this, put your airtag into "lost mode" on your iPhone and then power off your phone **OR** Have your phone far from your airtag.
 #### 2. Next, compile and write the **airtag_sniffer.ino** script onto your ESP32 (preferably using Arduino IDE).
 #### 3. Open the serial monitor, then click the reset button located on your ESP32.
