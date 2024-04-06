@@ -14,15 +14,15 @@ Have your phone far from your airtag.
 
 Next, compile and write the **airtag_sniffer.ino** script onto your ESP32 (preferably using Arduino IDE).
 
-Open the serial monitor and click the reset button located on your ESP32.
+Open the serial monitor, then click the reset button located on your ESP32.
 
-You should be receiving airtag data around you, locate the one with the strongest RSSI
+You should be receiving airtag data around you, locate the one with the strongest RSSI (the one closest to you) and copy the info
 
-2. Now you need to retreive the advetisement key from the payload data.
-
-Run the **payload-to-key.py** python script.
+2. Run the **flash_esp32.py** python script.
 
 Enter the values that you found when sniffing the airtag, the mac address and payload.
 
-The script will generate an advertisement key, you will need this later, save it somewhere.
+The script will generate an advertisement key, save it in a file temporarely, then write the firmware with the key on the ESP32.
+
+Open the Find My app on your iPhone and you should now start seing the live location of the ESP32.
 
