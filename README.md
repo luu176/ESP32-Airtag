@@ -1,9 +1,11 @@
 # ESP32-Airtag
 Clone an existing airtag onto an ESP32
 
-Based on openhaystack
+All the code was written by luu176
 
-All these scripts werw made by luu176
+Disclaimer: DO NOT TRACK SOMEONE WITHOUT EXPLICIT PERMISSION. DO NOT USE THIS FOR ILLEGAL PURPOSES.
+
+Models supported: ESP32-S3, ESP32-WROOM, ESP32 Dev Kit, ESP32-WROVER, and any other ESP32 that can transceive in BTLE.
 
 How to use:
 1. First you need to get the airtag data. 
