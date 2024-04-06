@@ -7,8 +7,13 @@ Disclaimer: DO NOT TRACK SOMEONE WITHOUT EXPLICIT PERMISSION. DO NOT USE THIS FO
 
 Models supported: ESP32-S3, ESP32-WROOM, ESP32 Dev Kit, ESP32-WROVER, and any other ESP32 that can transceive in BTLE.
 
-How to use:
-1. First you need to get the airtag data. 
+
+
+
+
+
+**How to use:**
+    1. First you need to get the airtag data. 
 
 To do this, put your airtag into "lost mode" on your iPhone and then power off your phone 
 **OR** 
@@ -20,7 +25,9 @@ Open the serial monitor, then click the reset button located on your ESP32.
 
 You should be receiving airtag data around you, locate the one with the strongest RSSI (the one closest to you) and copy the info
 
-2. Run the **flash_esp32.py** python script.
+
+
+    2. Run the **flash_esp32.py** python script.
 
 Enter the values that you found when sniffing the airtag, the mac address and payload.
 
