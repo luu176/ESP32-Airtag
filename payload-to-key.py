@@ -1,7 +1,7 @@
 import base64
 
 
-def reverse_generate_mac_and_payload(addr_hex, payload_hex):
+def generate(addr_hex, payload_hex):
     addr = bytearray.fromhex(addr_hex)
     key = bytearray(28)
     key[0:6] = addr[0:6]
@@ -15,7 +15,7 @@ def reverse_generate_mac_and_payload(addr_hex, payload_hex):
 
 payload = input("enter payload: ").replace(" ", "")
 addr = input("enter mac address: ").replace(" ", "").replace(":", "")
-adv_key = reverse_generate_mac_and_payload(addr.lower(), payload.lower()).hex()
+adv_key = generate(addr.lower(), payload.lower()).hex()
 advertisement_key = base64.b64encode(bytes.fromhex(adv_key)).decode("ascii")
 
 print('advertisement key:', advertisement_key)
